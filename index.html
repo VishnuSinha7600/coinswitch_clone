@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100..900&family=Jersey+10&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Silkscreen:wght@400;700&display=swap');
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Open Sans", sans-serif;
+        }
+        nav{
+            width: 100%;
+            height: 80px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+        nav>div>img:first-child{
+            width: 200px;
+            height: 40px;
+            margin-left: 100px;
+        }
+
+        nav>div span{
+            font-size: 17px;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 500;
+            margin-right: 50px;
+        }
+        
+
+        nav>div button{
+            width: 150px;
+            height: 50px;
+            border-radius: 10px;
+            border: none;
+            background-color: #b1e50e;
+            font-size: 17px;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 500;
+            margin-right: 70px;
+        }
+
+        main>div{
+
+            width: 90%;
+            height: 60vh;
+            margin: auto;
+            margin-top: 30px;
+            padding: 50px;
+            border-radius: 15px;
+            background-image: linear-gradient( rgb(216, 216, 255) , white);
+        }
+
+        main>div img{
+            width: 200px;
+            height: 40px;
+            margin-left: 70px;
+
+           }
+
+        main>div h1:nth-of-type(1){
+           
+            font-size: 4em;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 800;
+            margin-left: 70px;
+            margin-top: 50px;
+            line-height: 50px;
+           
+        }
+        main>div h1:nth-of-type(2){
+            font-size: 4em;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 800;
+            color: #99b5fc;
+            margin-left: 70px;
+            margin-top: 50px;
+            line-height: 50px;
+           
+          
+       }
+       main>div p{
+            font-size: 2em;
+            max-width: 980px;
+            font-family: "Open Sans", sans-serif;
+            margin-left: 70px;
+            color: gray;
+            font-weight: 700;
+            margin-top: 50px;
+            line-height: 50px;
+       }
+       main>div button{
+            margin-left: 70px;
+            font-size: 15px;
+            font-family: "Open Sans", sans-serif;
+            width: 150px;
+            height: 45px;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+       }
+
+       section>div.box1{
+
+            width: 90%;
+            height: 75vh;
+            margin: auto;
+            margin-top: 30px;
+            padding: 50px;
+            display: flex;
+        }
+
+        section>div.box1>div img{
+            width: 40vw;
+            margin-left: 50px;
+
+        }
+
+        div.box1_right>p:first-child{
+            font-size: 1.5em;
+            max-width: 600px;
+            font-weight: bold;
+            color: rgb(73, 73, 73);
+            font-family: "Open Sans", sans-serif;
+
+        }
+        div.box1_right>p:last-child{
+            font-size: 1em;
+            max-width: 500px;
+            font-weight: bold;
+            color: gray;
+            font-family: "Open Sans", sans-serif;
+
+        }
+
+        div.box1_right{
+            padding: 130px;
+        }
+
+        section>div.box2{
+
+            width: 90%;
+            height: 70vh;
+            margin: auto;
+           
+        }
+        section>div.box2 h1{
+            font-size: 3em;
+            
+            font-weight: bold;
+            color: rgb(90, 87, 87);
+
+        }
+
+        section>div.box2>div{
+            width: 240px;
+            height: 350px;
+            display: grid;
+            gap: 50px;
+            grid-area: 10px;
+            grid-template-columns: repeat( 4,1fr);
+        }
+
+        section>div.box2 .card img{
+            width: 150px;
+            height: 200px;
+        }
+        section>div.box2 div.card{
+            padding: 10px;
+            border-radius: 10px;
+            width: 240px;
+            height: 350px; 
+            background-color: white important;
+        }
+
+        section>div.box2 div.card:not(:hover){
+            background-color: orange;
+        }
+
+        section>div.box2 .card h2{
+            width: 240px;
+            height: 350px;
+            color: gray;
+           font-size: 1.3em;
+           
+
+        }
+
+        section>div.box3{
+
+            width: 90%;
+            height: 165vh;
+            margin: auto;
+            background-image: linear-gradient(white,  rgb(224, 224, 249) , white);
+
+        }
+
+        section>div.box3 h1{
+            font-size: 3em;
+            
+            font-weight: bold;
+            color: rgb(90, 87, 87);
+
+        }
+
+        section>div.box3>div{
+            width: 100%;
+            height: 350px;
+            display: grid;
+            gap: 30px;
+            margin-left: 15px;
+            grid-area: 10px;
+            grid-template-columns: repeat(4 ,1fr);
+        }
+
+        section>div.box3>div .card2{
+            width: 220px;
+            height: 270px;
+            padding: 30px;
+            border-radius: 20px;
+            background-color: white;
+            box-shadow: rgba(148, 146, 146, 0.24) 0px 3px 8px;
+        }
+
+        section>div.box3>div .card2 img{
+           height: 55px;
+           margin-bottom: 50px;
+        }
+
+        section>div.box3>div .card2 h2{
+           font-size: 1.4em;
+        }
+        section>div.box3>div .card2 h3{
+           font-size: 1.3em;
+           color: gray;
+        }
+
+        section>div.box4{
+
+            width: 90%;
+            height: 80vh;
+            margin: auto;
+            border-radius: 20px;
+        }
+        section>div.box4 h1{
+            font-size: 3em;
+            font-weight: bold;
+            color: rgb(90, 87, 87);
+
+        }
+
+        section>div.box4>div{
+            width: 370px;
+            height: 430px;
+            display: grid;
+            gap: 50px;
+            grid-area: 10px;
+            grid-template-columns: repeat( 4,1fr);
+        }
+
+        section>div.box4>div .card3 img{
+            width: 370px;
+           height: 250px;
+           border-radius: 10px;
+           margin-bottom: 50px;
+        }
+
+        section>div.box4>div .card3{
+            padding: 20px;
+        }
+
+        section>div.box4>div .card3 h2{
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-top: -10px;
+            color: rgb(83, 78, 78);
+        }
+
+        section>div.box4>div .card3 p{
+            font-size: 1em;
+            font-weight: bold;
+            color: rgb(90, 87, 87);
+        }
+        
+
+
+        footer{
+            width: 100%;
+            height: 100vh;
+            margin-top: 10px;
+            background-color: rgb(40, 44, 53);
+        }
+
+        footer>div{
+            padding: 70px;
+            display: flex;
+            color: white;
+            justify-content: space-between;
+        }
+
+        .footer_img img{
+            width: 230px;
+            height: 50px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: white;
+
+        }
+
+        div div.footer_down span{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        div div.footer_down span:nth-of-type(1){
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div>
+                <img src="coinLogo.png" alt="">
+            </div>
+            <div>
+                <span>Products <span class="material-symbols-outlined">  keyboard_arrow_down </span></span>
+                <span>Coins</span>
+                <span>Ventures</span>
+                <span>Blog</span>
+                <span>Company <span class="material-symbols-outlined"> keyboard_arrow_down</span></span>
+                <button>Login To Pro</button>
+            </div>
+         
+        </nav>
+    </header>
+
+    <main>
+
+        <div>
+            <img src="coinLogo.png" alt="">
+            <h1>Your Innovation</h1>
+            <h1>Our Fuel</h1>
+            <p>CoinSwitch Ventures invests in the most promising Web3 and blockchain projects in India. Does that sound like you ?</p>
+            <button>Apply Now</button>   
+        </div>
+    </main>
+
+    <section>
+        <div class="box1">
+            <div class="box1_left"><img src="image.png" alt=""></div>
+            <div class="box1_right">
+                <p>We believe that Web3 and blockchain are the foundations of the new digital, decentralized economy.</p>
+                <p>To this end, we’re partnering with startups that are advancing the future of Blockchain technology. We provide early stage founders with the capital, network connections and most importantly, the advice they need to transform the Web3 landscape in India.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="box2">
+            <h1>Why it Matters?</h1>
+           <div>
+            <div class="card">
+                <img src="image copy.png" alt="">
+                <h2>Partnership with India’s
+                    largest wealth tech
+                    destination</h2>
+            </div>
+            <div class="card">
+                <img src="image copy 2.png" alt="">
+                <h2>Partnership with India’s
+                    largest wealth tech
+                    destination</h2>
+            </div>
+            <div class="card">
+                <img src="image copy 3.png" alt="">
+                <h2>Partnership with India’s
+                    largest wealth tech
+                    destination</h2>
+            </div>
+            <div class="card">
+                <img src="image copy 4.png" alt="">
+                <h2>Partnership with India’s
+                    largest wealth tech
+                    destination</h2>
+            </div>
+
+           </div>
+        </div>
+
+    </section>
+
+
+    <section>
+        <div class="box3">
+            <h1>Our Selected Portfolio</h1>
+           <div>
+            <div class="card2">
+                <img src="image copy 5.png" alt="">
+                <h2>PYOR</h2>
+                <h3>Blockchain dara & research</h3>
+            </div>
+            <div class="card2">
+                <img src="image copy 6.png" alt="">
+                <h2>PYOR</h2>
+                <h3>Blockchain dara & research</h3>
+            </div>
+            <div class="card2">
+                <img src="image copy 7.png" alt="">
+                <h2>PYOR</h2>
+                <h3>Blockchain dara & research</h3>
+            </div>
+            <div class="card2">
+                <img src="image copy 8.png" alt="">
+                <h2>PYOR</h2>
+                <h3>Blockchain dara & research</h3>
+            </div>
+            <div class="card2">
+                <img src="image copy 3.png" alt="">
+                <h2>PYOR</h2>
+                <h3>Blockchain dara & research</h3>
+            </div>
+            <div class="card2">
+                <img src="image copy 4.png" alt="">
+                <h2>PYOR</h2>
+                <h3>Blockchain dara & research</h3>
+            </div>
+            <div class="card2">
+                <img src="image copy 5.png" alt="">
+                <h2>PYOR</h2>
+                <h3>Blockchain dara & research</h3>
+            </div>
+            <div class="card2">
+                <img src="image copy 2.png" alt="">
+                <h2>PYOR</h2>
+                <h3>Blockchain dara & research</h3>
+            </div>
+            <div class="card2">
+                <img src="image copy 5.png" alt="">
+                <h2>PYOR</h2>
+                <h3>Blockchain dara & research</h3>
+            </div>
+            <div class="card2">
+                <img src="image copy 6.png" alt="">
+                <h2>PYOR</h2>
+                <h3>Blockchain dara & research</h3>
+            </div>
+            <div class="card2">
+                <img src="image copy 7.png" alt="">
+                <h2>PYOR</h2>
+                <h3>Blockchain dara & research</h3>
+            </div>
+            <div class="card2">
+                <img src="image copy 8.png" alt="">
+                <h2>PYOR</h2>
+                <h3>Blockchain dara & research</h3>
+            </div>
+           </div>
+        </div>
+
+    </section>
+
+
+
+    <section>
+        <div class="box4">
+            <h1>Why it Matters?</h1>
+           <div>
+            <div class="card3">
+                <img src="image copy 9.png" alt="">
+                <h2>Web3 protocol Polytrade raises $3.8M to improve global trade</h2>
+                <p>18 May 2023</p>
+            </div>
+            <div class="card3">
+                <img src="image copy 10.png" alt="">
+                <h2>Crypto analytics firm Block Scholes raises $3.3 million to boost growth</h2>
+                <p>18 May 2023</p>
+            </div>
+            <div class="card3">
+                <img src="image copy 11.png" alt="">
+                <h2>PYOR raises $4mn in seed funding led by Castle Island Ventures</h2>
+                <p>18 May 2023</p>
+            </div>
+
+           </div>
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div>
+            <div class="footer_img">
+                <img src="coinLogo.png" alt="">
+                <p>Follow us on</p>
+                <i class="fa-brands fa-telegram"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="text_p">
+                <p>We are available on
+                    most familiar channels</p>
+                <p>Email Us
+                    support@coinswitch.co</p>
+
+                <p>Raise a Ticket
+
+                    Click here</p>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <div class="footer_down">
+                <span> Buy Crypto</span>
+                <span>Buy Bitcoin</span>
+                <span>Buy Ethereum</span>
+                <span>Buy Doge coin</span>
+            </div>
+            <div>
+               <span> Buy Crypto</span>
+                <span>Buy Bitcoin</span>
+                <span>Buy Ethereum</span>
+                <span>Buy Doge coin</span>
+                <span>Buy Shiba Inu</span>
+            </div>
+            <div>
+                <span> Buy Crypto</span>
+                <span>Buy Bitcoin</span>
+                <span>Buy Ethereum</span>
+                <span>Buy Doge coin</span>
+                <span>Buy Shiba Inu</span>
+                <span> Buy Crypto</span>
+                <span>Buy Bitcoin</span>
+                <span>Buy Ethereum</span>
+                <span>Buy Doge coin</span>
+                <span>Buy Shiba Inu</span>
+            </div>
+            <div>
+                <span> Buy Crypto</span>
+                <span>Buy Bitcoin</span>
+                <span>Buy Ethereum</span>
+                <span>Buy Doge coin</span>
+                <span>Buy Shiba Inu</span>
+                <span> Buy Crypto</span>
+                <span>Buy Bitcoin</span>
+                <span>Buy Ethereum</span>
+                <span>Buy Doge coin</span>
+                <span>Buy Shiba Inu</span>
+            </div>
+        </div>
+
+
+    </footer>
+    
+</body>
+</html>
